@@ -1,16 +1,16 @@
 {
-    "version": "2.0.0",
+    "version": "3.0.0",
     "description": "The Next Generation Anti-Rootkit (ARK) tool for Windows.",
     "homepage": "http://openark.blackint3.com:88",
     "license": "LGPL-2.1-only",
     "architecture": {
         "64bit": {
-            "url": "http://file.blackint3.com:88/v1/openark/files/openark/OpenArk-v3.0.0-202610200026/OpenArk64.exe#/OpenArk.exe",
-            "hash": "sha1:6e9788b19124b51c819940465b06faba225836f9"
+            "url": "http://file.blackint3.com:88/openark/OpenArk64.exe#/OpenArk.exe",
+            "hash": "sha1:05c10a4345eade65873e49fdeede49cc72c23a57"
         },
         "32bit": {
-            "url": "http://file.blackint3.com:88/v1/openark/files/openark/OpenArk-v3.0.0-202610200026/OpenArk32.exe#/OpenArk.exe",
-            "hash": "sha1:8e011295d753e94c8b330f17267b9b6df1e09b6e"
+            "url": "http://file.blackint3.com:88/openark/OpenArk32.exe#/OpenArk.exe",
+            "hash": "sha1:753bbee6f1fcd37ff509b870224721dbce8bf671"
         }
     },
     "shortcuts": [
@@ -33,17 +33,17 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://file.blackint3.com:88/v1/openark/files/openark/OpenArk-v$matchVersion-$matchBuild/OpenArk64.exe#/OpenArk.exe",
+                "url": "http://file.blackint3.com:88/openark/OpenArk64.exe#/OpenArk.exe",
                 "hash": {
                     "url": "http://file.blackint3.com:88/openark/version.txt",
-                    "find": "(?<=apphash64=)[\\w]+"
+                    "find": "apphash64\":\"([\\w]+)"
                 }
             },
             "32bit": {
-                "url": "http://file.blackint3.com:88/v1/openark/files/openark/OpenArk-v$matchVersion-$matchBuild/OpenArk32.exe#/OpenArk.exe",
+                "url": "http://file.blackint3.com:88/openark/OpenArk32.exe#/OpenArk.exe",
                 "hash": {
                     "url": "http://file.blackint3.com:88/openark/version.txt",
-                    "find": "(?<=apphash32=)[\\w]+"
+                    "find": "apphash32\":\"([\\w]+)"
                 }
             }
         }
