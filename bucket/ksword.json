@@ -13,15 +13,22 @@
         }
     },
     "extract_dir": "Release",
-    "bin": [
-        "Launcher.exe",
-        "KswordCLI.exe"
-    ],
+    "bin": "KswordCLI.exe",
     "shortcuts": [
         [
             "Launcher.exe",
-            "KSword"
+            "KSword",
+            "--launcher-main"
+        ],
+        [
+            "Launcher.exe",
+            "KSword Light",
+            "--launcher-light"
         ]
+    ],
+    "persist": [
+        "config",
+        "Style"
     ],
     "checkver": {
         "github": "https://github.com/KSwordDEV/KSword",
