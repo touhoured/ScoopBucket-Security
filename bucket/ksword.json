@@ -1,0 +1,37 @@
+{
+    "version": "5.2.1.0Pre",
+    "description": "Windows anti-rootkit (ARK), kernel debugging and system forensics toolkit",
+    "homepage": "https://ksword.dev",
+    "license": {
+        "identifier": "Custom",
+        "url": "https://github.com/KSwordDEV/KSword/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/KSwordDEV/KSword/releases/download/5.2.1.0Pre/KswordARK-5.2.1.0Pre.7z",
+            "hash": "ef6491979ce23fb0840ee466d831969232bf80d1cd15fc7a094772e4fbea7343"
+        }
+    },
+    "extract_dir": "Release",
+    "bin": [
+        "Launcher.exe",
+        "KswordCLI.exe"
+    ],
+    "shortcuts": [
+        [
+            "Launcher.exe",
+            "KSword"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/KSwordDEV/KSword",
+        "regex": "([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/KSwordDEV/KSword/releases/download/$version/KswordARK-$version.7z"
+            }
+        }
+    }
+}
