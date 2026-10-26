@@ -3,8 +3,8 @@
     "description": "Windows anti-rootkit (ARK), kernel debugging and system forensics toolkit",
     "homepage": "https://ksword.dev",
     "license": {
-        "identifier": "Custom",
-        "url": "https://github.com/KSwordDEV/KSword/blob/main/LICENSE"
+        "identifier": "LicenseRef-KSword-Community-Source-1.6",
+        "url": "https://ksword.dev/docs/license"
     },
     "architecture": {
         "64bit": {
